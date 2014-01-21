@@ -11,6 +11,14 @@ Just add this to your `express.js` file:
     var render = require('render');
     app.use(render);
 
+Now add:
+
+  <meta name="fragment" content="!">
+
+At the top of your `<head>`.
+
 Easy peasy.
+
+
 
 
