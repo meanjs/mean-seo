@@ -13,7 +13,7 @@ Just add this to your `express.js` file:
 
 Now add:
 
-  <meta name="fragment" content="!">
+    <meta name="fragment" content="!">
 
 At the top of your `<head>`.
 
