@@ -1,17 +1,18 @@
 {
-    "name": "renderjs",
-    "version": "0.0.1",
-    "keywords": [
-        "phantomjs",
-        "headless",
-        "webkit"
-    ],
-    "author": {
-        "name": "Roie Cohen",
-        "email": "roie.cohen@gmail.com"
-    },
-    "dependencies": {
-        "lodash": "~2.4.1",
-        "zombie": "~2.0.0"
-    }
+  "name": "renderjs",
+  "version": "0.0.1",
+  "keywords": [
+    "phantomjs",
+    "headless",
+    "webkit"
+  ],
+  "author": {
+    "name": "Roie Cohen",
+    "email": "roie.cohen@gmail.com"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "zombie": "~2.0.0",
+    "nconf": "~0.6.9"
+  }
 }
