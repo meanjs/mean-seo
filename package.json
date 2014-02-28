@@ -1,10 +1,13 @@
 {
-  "name": "renderjs",
-  "version": "0.0.4",
+  "name": "mean-seo",
+  "version": "0.0.1",
   "keywords": [
     "phantomjs",
     "headless",
-    "webkit"
+    "webkit",
+    "mean",
+    "meanjs",
+    "seo"
   ],
   "author": {
     "name": "Roie Cohen",
@@ -13,7 +16,6 @@
   "dependencies": {
     "lodash": "~2.4.1",
     "zombie": "~2.0.0",
-    "nconf": "~0.6.9",
     "redis": "~0.10.0",
     "moment": "~2.5.1",
     "MD5": "~1.2.0"
