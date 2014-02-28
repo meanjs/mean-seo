@@ -26,7 +26,7 @@ And then, if your Express app is called "app", add the following:
 	
 	app.use(render);	
 
-In order for the crawler to know you are serving an SPA page using hashbangs, you should also make sure to add the following to the <head> of your page:
+In order for the crawler to know you are serving an SPA page using hashbangs, you should also make sure to add the following to the `head` of your page:
 
 	<meta name=”fragment” content=”!”>
 
