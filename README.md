@@ -15,17 +15,16 @@ In addition, the plugin caches the page for the duration you define, either by s
 
 Here's how to set MEAN-SEO up:
 
-	var render = require('render').create({
-		type: 'disk', //or redis
-		duration: 2, //in days
-		path: '/tmp/cache' //make sure this directory exists
+	var seo = require('mean-seo')({
+		cacheClient: 'disk', // Can be 'disk' or 'redis'
+		cacheDuration: 2, // In milliseconds for disk cache
 	});
 
 And then, if your Express app is called "app", add the following:
-	
-	app.use(render);	
 
-In order for the crawler to know you are serving an SPA page using hashbangs, you should also make sure to add the following to the `head` of your page:
+	app.use(seo());
+
+In order for the crawler to know you are serving an SPA page using hashbangs. So if you use HTML5 pushState URL scheme then you should also make sure to add the following to the <head> tag of your page:
 
 	<meta name=”fragment” content=”!”>
 
@@ -50,4 +49,3 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-

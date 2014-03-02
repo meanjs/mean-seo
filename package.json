@@ -1,23 +1,22 @@
 {
-  "name": "mean-seo",
-  "version": "0.0.1",
-  "keywords": [
-    "phantomjs",
-    "headless",
-    "webkit",
-    "mean",
-    "meanjs",
-    "seo"
-  ],
-  "author": {
-    "name": "Roie Cohen",
-    "email": "roie.cohen@gmail.com"
-  },
-  "dependencies": {
-    "lodash": "~2.4.1",
-    "zombie": "~2.0.0",
-    "redis": "~0.10.0",
-    "moment": "~2.5.1",
-    "MD5": "~1.2.0"
-  }
+	"name": "mean-seo",
+	"version": "0.0.1",
+	"keywords": [
+		"phantomjs",
+		"headless",
+		"webkit",
+		"mean",
+		"meanjs",
+		"seo"
+	],
+	"author": {
+		"name": "Roie Cohen",
+		"email": "roie.cohen@gmail.com"
+	},
+	"dependencies": {
+		"lodash": "~2.4.x",
+		"redis": "~0.10.x",
+		"phantomjs": "~1.9.x",
+		"mkdirp": "~0.3.x"
+	}
 }
