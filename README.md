@@ -2,17 +2,18 @@ MEAN SEO
 ========================================================================
 
 ## Short version
+Forwards any [requests from crawlers](https://developers.google.com/webmasters/ajax-crawling/docs/specification) to a compiled page copy using PhantomJS.
 
-Forwards any requests from crawlers to a copy that's compiled in the server, on the fly, using Zombie.
+## Longer Version
+If you ever tried to make sure your Angular application is crawler friendly, you might already know this is a bit of a headache. Part of evolving the MEAN stack towards production ready state, the MEAN.JS SEO module makes it pretty simple to make sure your MEAN application ready for crawlers coming in.
 
-### Longer Version
-
-If you ever tried to make sure your SPA is crawler friendly, you might already know this is a bit of a headache. Part of evolving the MEAN stack towards production ready state, the MEAN.js SEO module makes it pretty simple to make sure your MEAN application ready for crawlers coming in.
-
-In short, what this plugin does is simple: Every time a crawler requests a page, the plugin launches a Zombie.js headless-browser, which then fetches the same page, but makes sure to wait for a while, before serving the fully rendered page back to the server.
+What this plugin does is simple: Every time a crawler requests a page using the *_escaped_fragment_*, the plugin launches a PhantomJS headless-browser, which creates a copy of the page and stores it in cache for future requests. 
 
 In addition, the plugin caches the page for the duration you define, either by saving the pages either to the disk or a to Redis instance (requires installing Redis). 
 
+The cached pages are either saved to disk or to a Redis instance (requires installing Redis).
+
+## Quick Install
 Here's how to set MEAN-SEO up:
 
 	var seo = require('mean-seo')({
@@ -20,11 +21,11 @@ Here's how to set MEAN-SEO up:
 		cacheDuration: 2, // In milliseconds for disk cache
 	});
 
-And then, if your Express app is called "app", add the following:
+And then, assuming your Express application instance is named 'app', you should add the following:
 
 	app.use(seo());
 
-In order for the crawler to know you are serving an SPA page using hashbangs. So if you use HTML5 pushState URL scheme then you should also make sure to add the following to the <head> tag of your page:
+If you use HTML5 URL scheme then you should let the crawler know you're serving an AJAX application by adding the following to the HEAD tag of your page:
 
 	<meta name=”fragment” content=”!”>
 
