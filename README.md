@@ -4,7 +4,7 @@ SEO Solution for MEAN.JS applications which forwards crawlers requests to a comp
 ## Longer Version
 If you ever tried to make your AngularJS application crawler friendly, you already know this is a bit of a headache. Part of evolving the MEAN.JS stack towards production ready state, the MEAN-SEO module makes it pretty simple to make sure your MEAN application is ready for crawlers requests.
 
-What this module does is simple: When a crawler requests the page using the [**\_escaped\_fragment\_**](https://developers.google.com/webmasters/ajax-crawling/docs/specification), the module launches the PhantomJS headless-browser, which creates a copy of the page and stores it in cache for future requests. 
+When a crawler requests the page using the [**\_escaped\_fragment\_**](https://developers.google.com/webmasters/ajax-crawling/docs/specification), the module launches the PhantomJS headless-browser, which creates a copy of the page and stores it in cache for future requests. 
 
 ## Quick Install
 First you'll need to install the MEAN-SEO module using npm:
