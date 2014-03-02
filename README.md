@@ -1,8 +1,5 @@
-MEAN SEO
-========================================================================
-
-## Short version
-Forwards any requests from crawlers to a compiled html copy using PhantomJS.
+# MEAN-SEO
+SEO Solution for MEAN.JS applications which forwards crawlers requests to a compiled HTML copy using PhantomJS.
 
 ## Longer Version
 If you ever tried to make your AngularJS application crawler friendly, you already know this is a bit of a headache. Part of evolving the MEAN.JS stack towards production ready state, the MEAN-SEO module makes it pretty simple to make sure your MEAN application is ready for crawlers requests.
