@@ -11,9 +11,11 @@ What this module does is simple: When a crawler requests the page using the [**\
 
 ## Quick Install
 First you'll need to install the MEAN-SEO module using npm:
+
 	npm install mean-seo --save
 
 Then include in you express application: 
+
 	var seo = require('mean-seo')({
 		cacheClient: 'disk', // Can be 'disk' or 'redis'
 		cacheDuration: 2, // In milliseconds for disk cache
