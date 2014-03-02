@@ -18,7 +18,7 @@ Then include in you express application:
 
 	var seo = require('mean-seo')({
 		cacheClient: 'disk', // Can be 'disk' or 'redis'
-		cacheDuration: 2, // In milliseconds for disk cache
+		cacheDuration: 2 * 60 * 60 * 24 * 1000, // In milliseconds for disk cache
 	});
 
 And finally, add the following:
