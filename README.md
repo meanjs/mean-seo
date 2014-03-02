@@ -29,6 +29,7 @@ If you use HTML5 URL scheme then you should let the crawler know you're serving 
 
 ## Resources
 [Google AJAX Application Guide](https://developers.google.com/webmasters/ajax-crawling/docs/specification)
+
 [A Tutorial About AngularJS SEO](http://www.yearofmoo.com/2012/11/angularjs-and-seo.html)
 
 
