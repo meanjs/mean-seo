@@ -1,6 +1,7 @@
 {
 	"name": "mean-seo",
-	"version": "0.0.1",
+	"url": "https://github.com/meanjs/mean-seo",
+	"version": "0.0.2",
 	"keywords": [
 		"phantomjs",
 		"headless",
@@ -10,7 +11,7 @@
 		"seo"
 	],
 	"author": {
-		"name": "Roie Cohen",
+		"name": "Roie Cohen and Amos Haviv",
 		"email": "roie.cohen@gmail.com"
 	},
 	"dependencies": {
