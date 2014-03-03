@@ -18,8 +18,8 @@ Then include in you express application:
 		cacheDuration: 2 * 60 * 60 * 24 * 1000, // In milliseconds for disk cache
 	});
 
-And finally, add the following:
-
+And finally, just before you require the *app.router* middleware add the following:
+	
 	app.use(seo);
 
 If you use HTML5 URL scheme then you should let the crawler know you're serving an AJAX application by adding the following to the HEAD tag of your page:
