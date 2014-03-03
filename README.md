@@ -20,7 +20,7 @@ Then include in you express application:
 
 And finally, add the following:
 
-	app.use(seo());
+	app.use(seo);
 
 If you use HTML5 URL scheme then you should let the crawler know you're serving an AJAX application by adding the following to the HEAD tag of your page:
 
