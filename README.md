@@ -21,6 +21,8 @@ And finally, just before you require the **app.router** middleware add the follo
 		cacheClient: 'disk', // Can be 'disk' or 'redis'
 		cacheDuration: 2 * 60 * 60 * 24 * 1000, // In milliseconds for disk cache
 	}));
+	...
+	// app.use(app.router) will be below this line 
 
 If you use HTML5 URL scheme then you should let the crawler know you're serving an AJAX application by adding the following to the HEAD tag of your page:
 
