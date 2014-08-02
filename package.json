@@ -1,23 +1,30 @@
 {
-	"name": "mean-seo",
-	"url": "https://github.com/meanjs/mean-seo",
-	"version": "0.0.6",
-	"keywords": [
-		"phantomjs",
-		"headless",
-		"webkit",
-		"mean",
-		"meanjs",
-		"seo"
-	],
-	"author": {
-		"name": "Roie Cohen and Amos Haviv",
-		"email": "roie.cohen@gmail.com"
-	},
-	"dependencies": {
-		"lodash": "~2.4.x",
-		"redis": "~0.10.x",
-		"phantomjs": "~1.9.x",
-		"mkdirp": "~0.3.x"
-	}
+  "name": "mean-seo",
+  "url": "https://github.com/meanjs/mean-seo",
+  "version": "0.0.6",
+  "keywords": [
+    "phantomjs",
+    "headless",
+    "webkit",
+    "mean",
+    "meanjs",
+    "seo"
+  ],
+  "author": {
+    "name": "Roie Cohen and Amos Haviv",
+    "email": "roie.cohen@gmail.com"
+  },
+  "dependencies": {
+    "lodash": "~2.4.x",
+    "redis": "~0.10.x",
+    "phantomjs": "~1.9.x",
+    "mkdirp": "~0.3.x"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.3",
+    "should": "^4.0.4"
+  }
 }
