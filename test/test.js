@@ -2,6 +2,7 @@ var express = require('express');
 var request = require('request');
 var fs = require('fs');
 var path = require('path');
+
 var seo = require('../index.js');
 
 describe('Express server', function () {
