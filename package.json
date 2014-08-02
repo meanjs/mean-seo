@@ -21,10 +21,12 @@
     "mkdirp": "~0.3.x"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha --require should --reporter spec"
   },
   "devDependencies": {
+    "express": "^4.7.2",
     "mocha": "^1.21.3",
+    "request": "^2.39.0",
     "should": "^4.0.4"
   }
 }
