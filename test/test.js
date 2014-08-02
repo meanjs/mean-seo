@@ -76,5 +76,17 @@ describe('Express server', function () {
       });
     }); 
   });
+
+  describe('with mean-seo `rediscloud`', function () {
+    it('should error out if env variable is not declared', function () {
+      app = express();
+      process.env.REDISCLOUD_URL = '';
+      try {
+        app.use(seo({ cacheClient: 'rediscloud' }));
+      } catch (exception) {
+        exception.should.be.ok;
+      }
+    });
+  });
 });
 
