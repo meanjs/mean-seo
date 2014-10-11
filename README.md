@@ -19,6 +19,7 @@ And finally, just before you require the **app.router** middleware add the follo
 	
 	app.use(seo({
 		cacheClient: 'disk', // Can be 'disk' or 'redis'
+    	redisURL: 'redis://:password@hostname:port', // If using redis, optionally specify server credentials
 		cacheDuration: 2 * 60 * 60 * 24 * 1000, // In milliseconds for disk cache
 	}));
 	
