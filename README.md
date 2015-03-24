@@ -21,6 +21,7 @@ And finally, just before you require the **app.router** middleware add the follo
 		cacheClient: 'disk', // Can be 'disk' or 'redis'
     	redisURL: 'redis://:password@hostname:port', // If using redis, optionally specify server credentials
 		cacheDuration: 2 * 60 * 60 * 24 * 1000, // In milliseconds for disk cache
+		cacheBuffer: 200 * 1024 // The the largest amount of data allowed on stdout, used for PhantomJS. Increase this when receiving 'stdout maxBuffer exceeded' errors.
 	}));
 	
 	// app.use(app.router) will be below this line 
