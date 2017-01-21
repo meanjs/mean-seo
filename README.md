@@ -1,3 +1,14 @@
+## Deprecated
+
+Google [has deprecated](https://webmasters.googleblog.com/2015/10/deprecating-our-ajax-crawling-scheme.html) (10/2015) `_escaped_fragment_` URL parameter and can now scrape javascript generated pages and thus this package isn't needed anymore at MEAN.js projects.
+
+Read more:
+- https://github.com/meanjs/mean/issues/1446
+- https://github.com/meanjs/mean/issues/1528
+- https://github.com/meanjs/mean-seo/issues/20
+
+Beware that at the current state this package [has some security issues](https://snyk.io/test/github/meanjs/mean-seo/) via outdated dependencies.
+
 # MEAN-SEO
 SEO Solution for MEAN.JS applications which forwards crawlers requests to a compiled HTML copy using PhantomJS.
 
