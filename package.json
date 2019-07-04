@@ -3,8 +3,8 @@
   "url": "https://github.com/meanjs/mean-seo",
   "version": "0.0.8",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/meanjs/mean-seo.git"
+    "type": "git",
+    "url": "https://github.com/meanjs/mean-seo.git"
   },
   "keywords": [
     "phantomjs",
@@ -22,10 +22,13 @@
     "lodash": "~2.4.x",
     "redis": "~0.10.x",
     "phantomjs": "~1.9.x",
-    "mkdirp": "~0.3.x"
+    "mkdirp": "~0.3.x",
+    "snyk": "^1.189.0"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --require should --reporter spec"
+    "test": "./node_modules/mocha/bin/mocha --require should --reporter spec",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "express": "^4.7.2",
@@ -33,5 +36,6 @@
     "request": "^2.39.0",
     "should": "^4.0.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
