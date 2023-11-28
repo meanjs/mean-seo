@@ -21,7 +21,7 @@
   "dependencies": {
     "lodash": "~2.4.x",
     "redis": "~0.10.x",
-    "phantomjs": "~1.9.x",
+    "phantomjs": "~2.1.1",
     "mkdirp": "~0.3.x"
   },
   "scripts": {
